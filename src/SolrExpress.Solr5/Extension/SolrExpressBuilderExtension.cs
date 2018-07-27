@@ -38,6 +38,7 @@ namespace SolrExpress.Solr5.Extension
                 .AddTransient<IInformationResult<TDocument>, InformationResult<TDocument>>()
                 .AddTransient<ILimitParameter<TDocument>, LimitParameter<TDocument>>()
                 .AddTransient<ILocalParameter<TDocument>, LocalParameter<TDocument>>()
+                .AddTransient<IFilterQueryParameter<TDocument>, FilterQueryParameter<TDocument>>()
                 .AddTransient<IMinimumShouldMatchParameter<TDocument>, MinimumShouldMatchParameter<TDocument>>()
                 .AddTransient<IOffsetParameter<TDocument>, OffsetParameter<TDocument>>()
                 .AddTransient<IQueryFieldParameter<TDocument>, QueryFieldParameter<TDocument>>()
